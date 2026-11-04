@@ -24,7 +24,7 @@ Repositorio para la transacción **`ZTPS046`** en SAP PS: **Cargador Masivo de G
 
 ```
 sap-ps-gui-ztps046/
-├── .abapgit.xml                                  # Configuración de abapGit
+├── .abapgit.xml                                  # Configuración de abapGit (opcional)
 ├── .gitignore
 ├── README.md
 ├── src/                                          # Código fuente ABAP
@@ -33,9 +33,21 @@ sap-ps-gui-ztps046/
 │   ├── zcl_ps_crea_grafos_mass.clas.abap         # Motor de Negocio (Clean ABAP OO)
 │   └── zcl_ps_crea_grafos_mass.clas.xml          # Metadatos de la clase
 └── docs/                                         # Documentación y plantillas
+    ├── MANUAL_INSTALLATION_ECLIPSE.md            # Guía paso a paso para Eclipse ADT (Sin abapGit)
+    ├── GUIA_INTERNACIONALIZACION.md              # Diccionario y guía de traducción ES -> EN
     ├── DOCUMENTACION_TECNICA.md                  # Especificación funcional y técnica
     └── PLANTILLA_CARGA_GRAFOS.csv                # Datos de prueba de ejemplo
 ```
+
+---
+
+## 💻 Instalación desde Eclipse ADT (Sin abapGit)
+
+Si tu sistema SAP no tiene abapGit instalado, la instalación se realiza en 5 minutos siguiendo la [**Guía de Instalación Manual desde Eclipse**](docs/MANUAL_INSTALLATION_ECLIPSE.md):
+1. Crear la clase **`ZCL_PS_CREA_GRAFOS_MASS`** en Eclipse y pegar `src/zcl_ps_crea_grafos_mass.clas.abap`.
+2. Crear el programa **`ZPS_R_00046`** en Eclipse y pegar `src/zps_r_00046.prog.abap`.
+3. Crear la transacción **`ZTPS046`** apuntando al programa `ZPS_R_00046`.
+4. Traducir al inglés siguiendo la [**Guía de Internacionalización**](docs/GUIA_INTERNACIONALIZACION.md).
 
 ---
 
