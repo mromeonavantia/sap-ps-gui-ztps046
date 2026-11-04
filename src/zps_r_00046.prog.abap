@@ -40,14 +40,14 @@ SELECTION-SCREEN FUNCTION KEY 1.
 INITIALIZATION.
   " Configurar botón de Application Log (SLG1) en la barra de herramientas
   DATA: ls_functxt TYPE smp_dyntxt.
-  ls_functxt-text      = TEXT-021. " SLG1
+  ls_functxt-text      = 'SLG1'(021).
   ls_functxt-icon_id   = '@DH@'.   " Icono estándar de Log
-  ls_functxt-icon_text = TEXT-021.
-  ls_functxt-quickinfo = TEXT-022. " Visualizar Log de Aplicación / Display Application Log
+  ls_functxt-icon_text = 'SLG1'(021).
+  ls_functxt-quickinfo = 'Visualizar Log de Aplicación'(022).
   sscrfields-functxt_01 = ls_functxt.
 
   " Configurar texto del botón de descarga de plantilla
-  template = TEXT-002. " Descargar Plantilla Excel / Download Excel Template
+  template = 'Descargar Plantilla Excel'(002).
 
 *----------------------------------------------------------------------*
 * AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_local
@@ -58,7 +58,7 @@ AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_local.
 
   CALL METHOD cl_gui_frontend_services=>file_open_dialog
     EXPORTING
-      window_title            = CONV string( TEXT-010 ) " Seleccione Fichero / Select File
+      window_title            = CONV string( 'Seleccione Fichero de Grafos'(010) )
       default_extension       = 'xlsx'
       file_filter             = 'Excel (*.xlsx;*.xls)|*.xlsx;*.xls|CSV (*.csv)|*.csv|Todos (*.*)|*.*'
     CHANGING
@@ -105,7 +105,7 @@ START-OF-SELECTION.
         es_summary = DATA(ls_summary_bg) ).
 
     " Mensaje informativo en el spool del Job
-    WRITE: / TEXT-060, " Resumen de Ejecución
+    WRITE: / 'Resumen de Ejecución en Fondo'(060),
            / |Total: { ls_summary_bg-total }|,
            / |Creados / Success: { ls_summary_bg-success }|,
            / |Errores / Errors: { ls_summary_bg-error }|.
@@ -126,12 +126,12 @@ START-OF-SELECTION.
           EXPORTING iv_filename = CONV #( p_local )
           IMPORTING et_data     = lt_data_to_bg ).
       CATCH cx_static_check.
-        MESSAGE s001(00) WITH TEXT-062 DISPLAY LIKE 'E'. " Error al leer el fichero local
+        MESSAGE s001(00) WITH 'Error al leer el fichero local'(062) DISPLAY LIKE 'E'.
         RETURN.
     ENDTRY.
 
     IF lt_data_to_bg IS INITIAL.
-      MESSAGE s001(00) WITH TEXT-063 DISPLAY LIKE 'E'. " El archivo no contiene datos
+      MESSAGE s001(00) WITH 'El archivo no contiene datos'(063) DISPLAY LIKE 'E'.
       RETURN.
     ENDIF.
 
@@ -164,7 +164,7 @@ START-OF-SELECTION.
     MESSAGE s167(zps) DISPLAY LIKE 'E'. " Revise los errores en el log SLG1
   ELSEIF ls_summary-success > 0.
     " Todo correcto
-    MESSAGE s001(00) WITH |{ ls_summary-success } { TEXT-064 }| DISPLAY LIKE 'S'.
+    MESSAGE s001(00) WITH |{ ls_summary-success } { 'Grafos creados con éxito'(064) }| DISPLAY LIKE 'S'.
   ENDIF.
 
   " Mostrar el log directamente en pantalla para máxima visibilidad
