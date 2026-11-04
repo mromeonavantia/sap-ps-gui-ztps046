@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+ <asx:values>
+  <PROGDIR>
+   <NAME>ZPS_R_00046</NAME>
+   <SUBC>1</SUBC>
+   <RLOAD>S</RLOAD>
+   <FIXPT>X</FIXPT>
+   <UCCHECK>X</UCCHECK>
+  </PROGDIR>
+  <TPOOL>
+   <item>
+    <ID>R</ID>
+    <ENTRY>Cargador de Grafos PS</ENTRY>
+    <LENGTH>70</LENGTH>
+   </item>
+   <item>
+    <ID>I</ID>
+    <KEY>001</KEY>
+    <ENTRY>Parámetros:</ENTRY>
+    <LENGTH>25</LENGTH>
+   </item>
+   <item>
+    <ID>I</ID>
+    <KEY>002</KEY>
+    <ENTRY>Descargar Plantilla Excel</ENTRY>
+    <LENGTH>35</LENGTH>
+   </item>
+   <item>
+    <ID>I</ID>
+    <KEY>010</KEY>
+    <ENTRY>Seleccione Fichero de Grafos</ENTRY>
+    <LENGTH>50</LENGTH>
+   </item>
+   <item>
+    <ID>I</ID>
+    <KEY>021</KEY>
+    <ENTRY>SLG1</ENTRY>
+    <LENGTH>10</LENGTH>
+   </item>
+   <item>
+    <ID>I</ID>
+    <KEY>022</KEY>
+    <ENTRY>Visualizar Log de Aplicación</ENTRY>
+    <LENGTH>50</LENGTH>
+   </item>
+   <item>
+    <ID>I</ID>
+    <KEY>030</KEY>
+    <ENTRY>Cargador de Grafos</ENTRY>
+    <LENGTH>50</LENGTH>
+   </item>
+   <item>
+    <ID>I</ID>
+    <KEY>060</KEY>
+    <ENTRY>Resumen de Ejecución en Fondo</ENTRY>
+    <LENGTH>50</LENGTH>
+   </item>
+   <item>
+    <ID>I</ID>
+    <KEY>061</KEY>
+    <ENTRY>No se encontraron registros de log</ENTRY>
+    <LENGTH>50</LENGTH>
+   </item>
+   <item>
+    <ID>I</ID>
+    <KEY>062</KEY>
+    <ENTRY>Error al leer el fichero local</ENTRY>
+    <LENGTH>50</LENGTH>
+   </item>
+   <item>
+    <ID>I</ID>
+    <KEY>063</KEY>
+    <ENTRY>El archivo no contiene datos</ENTRY>
+    <LENGTH>50</LENGTH>
+   </item>
+   <item>
+    <ID>I</ID>
+    <KEY>064</KEY>
+    <ENTRY>Grafos creados con éxito</ENTRY>
+    <LENGTH>50</LENGTH>
+   </item>
+   <item>
+    <ID>S</ID>
+    <KEY>P_LOCAL</KEY>
+    <ENTRY>        Ruta Fichero:</ENTRY>
+    <LENGTH>25</LENGTH>
+   </item>
+   <item>
+    <ID>S</ID>
+    <KEY>C_FONDO</KEY>
+    <ENTRY>        Procesar en segundo plano</ENTRY>
+    <LENGTH>35</LENGTH>
+   </item>
+  </TPOOL>
+  <I18N_TPOOL>
+   <I18N_TPOOL_LANG>
+    <LANGU>E</LANGU>
+    <TEXTPOOL>
+     <item>
+      <ID>R</ID>
+      <ENTRY>PS Project Network Mass Loader</ENTRY>
+      <LENGTH>70</LENGTH>
+     </item>
+     <item>
+      <ID>I</ID>
+      <KEY>001</KEY>
+      <ENTRY>Parameters:</ENTRY>
+      <LENGTH>25</LENGTH>
+     </item>
+     <item>
+      <ID>I</ID>
+      <KEY>002</KEY>
+      <ENTRY>Download Excel Template</ENTRY>
+      <LENGTH>35</LENGTH>
+     </item>
+     <item>
+      <ID>I</ID>
+      <KEY>010</KEY>
+      <ENTRY>Select Network File</ENTRY>
+      <LENGTH>50</LENGTH>
+     </item>
+     <item>
+      <ID>I</ID>
+      <KEY>021</KEY>
+      <ENTRY>SLG1</ENTRY>
+      <LENGTH>10</LENGTH>
+     </item>
+     <item>
+      <ID>I</ID>
+      <KEY>022</KEY>
+      <ENTRY>Display Application Log</ENTRY>
+      <LENGTH>50</LENGTH>
+     </item>
+     <item>
+      <ID>I</ID>
+      <KEY>030</KEY>
+      <ENTRY>Network Loader</ENTRY>
+      <LENGTH>50</LENGTH>
+     </item>
+     <item>
+      <ID>I</ID>
+      <KEY>060</KEY>
+      <ENTRY>Background Execution Summary</ENTRY>
+      <LENGTH>50</LENGTH>
+     </item>
+     <item>
+      <ID>I</ID>
+      <KEY>061</KEY>
+      <ENTRY>No log entries found</ENTRY>
+      <LENGTH>50</LENGTH>
+     </item>
+     <item>
+      <ID>I</ID>
+      <KEY>062</KEY>
+      <ENTRY>Error reading local file</ENTRY>
+      <LENGTH>50</LENGTH>
+     </item>
+     <item>
+      <ID>I</ID>
+      <KEY>063</KEY>
+      <ENTRY>File contains no data</ENTRY>
+      <LENGTH>50</LENGTH>
+     </item>
+     <item>
+      <ID>I</ID>
+      <KEY>064</KEY>
+      <ENTRY>Networks created successfully</ENTRY>
+      <LENGTH>50</LENGTH>
+     </item>
+     <item>
+      <ID>S</ID>
+      <KEY>P_LOCAL</KEY>
+      <ENTRY>        File Path:</ENTRY>
+      <LENGTH>25</LENGTH>
+     </item>
+     <item>
+      <ID>S</ID>
+      <KEY>C_FONDO</KEY>
+      <ENTRY>        Process in background</ENTRY>
+      <LENGTH>35</LENGTH>
+     </item>
+    </TEXTPOOL>
+   </I18N_TPOOL_LANG>
+  </I18N_TPOOL>
+ </asx:values>
+</asx:abap>

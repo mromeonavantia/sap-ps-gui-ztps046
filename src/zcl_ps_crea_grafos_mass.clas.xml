@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+ <asx:values>
+  <VSEOCLASS>
+   <CLSNAME>ZCL_PS_CREA_GRAFOS_MASS</CLSNAME>
+   <LANGU>S</LANGU>
+   <DESCRIPT>Cargador Masivo de Grafos PS (ZTPS046)</DESCRIPT>
+   <STATE>1</STATE>
+   <CLSCCINCL>X</CLSCCINCL>
+   <FIXPT>X</FIXPT>
+   <UNICODE>X</UNICODE>
+  </VSEOCLASS>
+  <I18N_TPOOL>
+   <I18N_TPOOL_LANG>
+    <LANGU>E</LANGU>
+    <DESCRIPT>PS Mass Network Creation Engine (ZTPS046)</DESCRIPT>
+   </I18N_TPOOL_LANG>
+  </I18N_TPOOL>
+ </asx:values>
+</asx:abap>
