@@ -54,7 +54,7 @@ sap-ps-gui-ztps046/
 ## 🚀 Instalación en SAP mediante abapGit
 
 1. Abrir la transacción **`ZABAPGIT`**.
-2. Clonar el repositorio: `https://github.com/mrgxzz/sap-ps-gui-ztps046.git`.
+2. Clonar el repositorio: `https://github.com/mromeonavantia/sap-ps-gui-ztps046.git`.
 3. Asignar el paquete de desarrollo correspondiente (ej. `$TMP` o paquete Z de PS).
 4. Ejecutar **Pull** y activar los objetos (`ZCL_PS_CREA_GRAFOS_MASS` y `ZPS_R_00046`).
 5. Crear la transacción **`ZTPS046`** en `SE93` apuntando al programa `ZPS_R_00046`.
